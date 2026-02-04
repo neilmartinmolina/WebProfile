@@ -152,7 +152,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 5rem;
     font-weight: 900;
-    color: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.03);
     z-index: 1;
     text-transform: uppercase;
     white-space: nowrap;
@@ -542,6 +542,13 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    text-decoration: none !important; /* Override Bootstrap */
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus,
+.footer-social-link:active {
+    text-decoration: none !important; /* Override Bootstrap hover states */
 }
 
 .footer-social-link::before {
